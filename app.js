@@ -60,6 +60,9 @@ app.get('/mediumFollowerCount', function (req, res) {
   getFollwersForUser(username)
     .then(function(count) {
       res.send(count.toString());
+    })
+    .catch((err) => {
+      res.send('0');
     });
 
   }
