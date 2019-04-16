@@ -1,6 +1,6 @@
-const express = require('express')
-const app = express()
-const port = 80
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
 
 /**
 * Call to get the number of followers for a Medium.com User.
