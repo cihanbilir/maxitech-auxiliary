@@ -53,7 +53,7 @@ function getFollwersForUser(username) {
 app.get('/mediumFollowerCount', function (req, res) {
 
   let username = req.query.username;
-  if (typeof username !== 'undefined' && username) {
+  if (username === undefined) {
     username = 'maxitech';
   }
 

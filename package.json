@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "SCB",
   "license": "ISC",
@@ -13,8 +13,5 @@
     "lodash": "^4.17.11",
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
-  },
-  "scripts": {
-    "start": "node app.js"
   }
 }
