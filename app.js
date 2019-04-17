@@ -58,7 +58,7 @@ app.get('/mediumFollowerCount', function (req, res) {
   }
 
   let resJson = {
-      "postfix": "Units",
+      "postfix": "Followers",
       "data": {
         "value": 0
       }
