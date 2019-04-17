@@ -57,12 +57,20 @@ app.get('/mediumFollowerCount', function (req, res) {
     username = 'maxitech';
   }
 
+  let resJson = {
+      "postfix": "Units",
+      "data": {
+        "value": 0
+      }
+    }
+
   getFollwersForUser(username)
     .then(function(count) {
-      res.send(count.toString());
+      resJson.data.value = count;
+      res.json(resJson);
     })
     .catch((err) => {
-      res.send('0');
+      res.json(resJson);
     });
 
   }
